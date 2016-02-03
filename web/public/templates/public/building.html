@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div>
+        <div class="top-line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <span><i class="fa fa-phone"></i>1234 - 5678 - 9012</span>
+                            <span><i class="fa fa-envelope-o"></i>support@flatbuild.com</span>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- page-banner-section
+            ================================================== -->
+        <section class="page-banner-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Services</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="page-depth">
+                            <li><a href="/">flatbuild</a></li>
+                            <li><a href="{% url 'services' %}">Services</a></li>
+                            <li><a href="{% url 'building' %}">Building</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End page-banner section -->
+
+        <!-- services-page section
+            ================================================== -->
+        <section class="services-page-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="side-navigation">
+                            <ul class="side-navigation-list">
+
+                                <li><a href="{% url 'services' %}">Our Services</a></li>
+                                <li><a href="{% url 'construction' %}">Construction</a></li>
+                                <li><a class="active" href="{% url 'building' %}">Building</a></li>
+                                <li><a href="{% url 'isolation' %}">Isolation</a></li>
+                                <li><a href="{% url 'electricy' %}">Electricy</a></li>
+                                <li><a  href="{% url 'painting' %}">Painting</a></li>
+                                <li><a href="{% url 'projecting' %}">Projecting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="services-wrapp">
+                            <div class="services-post">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="{{ STATIC_PREFIX }}upload/others/build1.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="{{ STATIC_PREFIX }}upload/others/build2.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="{{ STATIC_PREFIX }}upload/others/build3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="{{ STATIC_PREFIX }}upload/others/8.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="{{ STATIC_PREFIX }}upload/others/4.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <h2>Great Buildings</h2>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End services-page section -->
+
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+{% endblock %}
