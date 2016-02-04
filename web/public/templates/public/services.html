@@ -1,153 +1,912 @@
 {% extends "base.html" %}
 
-{% block content %}
 
-    <div>
-        <div class="top-line">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>
-                            <span><i class="fa fa-phone"></i>1234 - 5678 - 9012</span>
-                            <span><i class="fa fa-envelope-o"></i>support@flatbuild.com</span>
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="social-icons">
-                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
-                            <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- page-banner-section
-            ================================================== -->
-        <section class="page-banner-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>Services</h2>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="page-depth">
-                            <li><a href="/">flatbuild</a></li>
-                            <li><a href="{% url 'services' %}">Services</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End page-banner section -->
-
-        <!-- services-page section
-            ================================================== -->
-        <section class="services-page-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="side-navigation">
-                            <ul class="side-navigation-list">
-
-                                <li><a class="active" href="{% url 'services' %}">Our Services</a></li>
-                                <li><a href="{% url 'construction' %}">Construction</a></li>
-                                <li><a href="{% url 'building' %}">Building</a></li>
-                                <li><a href="{% url 'isolation' %}">Isolation</a></li>
-                                <li><a href="{% url 'electricy' %}">Electricy</a></li>
-                                <li><a  href="{% url 'painting' %}">Painting</a></li>
-                                <li><a  href="{% url 'projecting' %}">Projecting</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="services-wrapp">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="services-post">
-                                        <img src="{{ STATIC_PREFIX }}upload/others/con2.jpg" alt="">
-                                        <h2>Construction</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat.</p>
-                                        <a href="construction.html">Read More</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="services-post">
-                                        <img src="{{ STATIC_PREFIX }}upload/others/build4.jpg" alt="">
-                                        <h2>Building</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat.</p>
-                                        <a href="building.html">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="services-post">
-                                        <img src="{{ STATIC_PREFIX }}upload/others/iso1.jpg" alt="">
-                                        <h2>Isolation</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat.</p>
-                                        <a href="isolation.html">Read More</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="services-post">
-                                        <img src="{{ STATIC_PREFIX }}upload/others/paint2.jpg" alt="">
-                                        <h2>Painting</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat.</p>
-                                        <a href="painting.html">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="services-post">
-                                        <img src="{{ STATIC_PREFIX }}upload/others/el2.jpg" alt="">
-                                        <h2>Electricy</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat.</p>
-                                        <a href="electricy.html">Read More</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="services-post">
-                                        <img src="{{ STATIC_PREFIX }}upload/others/project1.jpg" alt="">
-                                        <h2>Projecting</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat.</p>
-                                        <a href="projecting.html">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End services-page section -->
-
-    </div>
+{% block header %}
+    <!-- Page Header -->
+    <section class="pageHeader section mainSection scrollAnchor darkSection" id="pageHeader">
+        {% include "shared/header.html" %}
+    </section><!-- end of Page Header -->
 {% endblock %}
 
-{% block extra_js %}
+{% block content %}
+ <!-- Page Info -->
+        <div class="pageInfo">
+          <div class="cover"></div>
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-4">
+                <h2 class="pageTitle">Services</h2>
+              </div><!-- end of col-md-4 -->
+
+              <div class="col-md-8">
+                <ol class="breadcrumb">
+                  <li><a href="#">Home</a></li>
+                  <li class="active">Services</li>
+                </ol><!-- end of breadcrumb -->
+              </div><!-- end of col-md-8 -->
+
+            </div><!-- end of row -->
+          </div><!-- end of container -->
+        </div><!-- end of page info -->
+
+      <!-- Welcome -->
+      <section class="welcome section mainSection scrollAnchor lightSection" id="welcome">
+        <div class="sectionWrapper">
+          <div class="container">
+
+            <div class="row">
+
+              <div class="col-md-12 sectionTitle">
+                <h2 class="sectionHeader">
+                  Welcome To Seven Host , Awesome Hosting Template
+                  <span class="generalBorder"></span>
+                </h2><!-- end of sectionHeader -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.</p>
+              </div><!-- end of section title -->
+
+            </div><!-- end of row -->
+
+            <div class="row">
+              <div class="servicesCarousel carousel owl-carousel servicesGallary">
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">System Admin</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">Backups &amp; Storage</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">24 / 7 Live Support</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">Worldwide locations</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-4"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">System Admin</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">Backups &amp; Storage</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">24 / 7 Live Support</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">Worldwide locations</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-4"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">System Admin</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">Backups &amp; Storage</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">24 / 7 Live Support</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">Worldwide locations</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-4"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div>
+                  <!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+              </div><!-- end of services gallary -->
+
+            </div><!-- end of row -->
+          </div><!-- end of container -->
+        </div><!-- end of section wrapper -->
+      </section><!-- end welcome section -->
+
+
+      <!-- Welcome -->
+      <section class="welcome section mainSection scrollAnchor graySection style-6" id="welcome2">
+        <div class="sectionWrapper">
+          <div class="container">
+
+            <div class="row">
+
+              <div class="col-md-12 sectionTitle">
+                <h2 class="sectionHeader">
+                  Welcome To Seven Host , Awesome Hosting Template
+                  <span class="generalBorder"></span>
+                </h2><!-- end of sectionHeader -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.</p>
+              </div><!-- end of section title -->
+
+            </div><!-- end of row -->
+
+            <div class="row">
+              <div id="servicesCarousel2" class="servicesCarousel servicesCarousel2 owl-carousel servicesGallary">
+
+                <div class="col-md-4 col-sm-6 item service singleServiceWrapper2">
+                  <div class="singleService singleService2 clearfix">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div><!-- end of services icon -->
+                    <div class="servicesContents">
+                      <h3 class="serviceName">System Admin</h3>
+                      <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis.</p>
+                    </div><!-- end of services contents -->
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-4 col-sm-6 item service singleServiceWrapper2">
+                  <div class="singleService singleService2 clearfix">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div><!-- end of services icon -->
+                    <div class="servicesContents">
+                      <h3 class="serviceName">Backups &amp; Storage</h3>
+                      <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis.</p>
+                    </div><!-- end of services contents -->
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-4 col-sm-6 item service singleServiceWrapper2">
+                  <div class="singleService singleService2 clearfix">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div><!-- end of services icon -->
+                    <div class="servicesContents">
+                      <h3 class="serviceName">24 / 7 Live Support</h3>
+                      <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis.</p>
+                    </div><!-- end of services contents -->
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-4 col-sm-6 item service singleServiceWrapper2">
+                  <div class="singleService singleService2 clearfix">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div><!-- end of services icon -->
+                    <div class="servicesContents">
+                      <h3 class="serviceName">System Admin</h3>
+                      <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis.</p>
+                    </div><!-- end of services contents -->
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-4 col-sm-6 item service singleServiceWrapper2">
+                  <div class="singleService singleService2 clearfix">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div><!-- end of services icon -->
+                    <div class="servicesContents">
+                      <h3 class="serviceName">Backups &amp; Storage</h3>
+                      <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis.</p>
+                    </div><!-- end of services contents -->
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-4 col-sm-6 item service singleServiceWrapper2">
+                  <div class="singleService singleService2 clearfix">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div><!-- end of services icon -->
+                    <div class="servicesContents">
+                      <h3 class="serviceName">24 / 7 Live Support</h3>
+                      <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis.</p>
+                    </div><!-- end of services contents -->
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-4 col-sm-6 item service singleServiceWrapper2">
+                  <div class="singleService singleService2 clearfix">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div><!-- end of services icon -->
+                    <div class="servicesContents">
+                      <h3 class="serviceName">System Admin</h3>
+                      <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis.</p>
+                    </div><!-- end of services contents -->
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-4 col-sm-6 item service singleServiceWrapper2">
+                  <div class="singleService singleService2 clearfix">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div><!-- end of services icon -->
+                    <div class="servicesContents">
+                      <h3 class="serviceName">Backups &amp; Storage</h3>
+                      <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis.</p>
+                    </div><!-- end of services contents -->
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-4 col-sm-6 item service singleServiceWrapper2">
+                  <div class="singleService singleService2 clearfix">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div><!-- end of services icon -->
+                    <div class="servicesContents">
+                      <h3 class="serviceName">24 / 7 Live Support</h3>
+                      <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis.</p>
+                    </div><!-- end of services contents -->
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+              </div><!-- end of services gallary -->
+
+            </div><!-- end of row -->
+          </div><!-- end of container -->
+        </div><!-- end of section wrapper -->
+      </section><!-- end welcome section -->
+
+
+      <!-- Welcome -->
+      <section class="welcome welcome2 section mainSection scrollAnchor lightSection" id="welcome3">
+        <div class="sectionWrapper">
+          <div class="container">
+
+            <div class="row">
+
+              <div class="col-md-12 sectionTitle">
+                <h2 class="sectionHeader">
+                  Welcome To Seven Host , Awesome Hosting Template
+                  <span class="generalBorder"></span>
+                </h2><!-- end of sectionHeader -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.</p>
+              </div><!-- end of section title -->
+
+            </div><!-- end of row -->
+
+            <div class="row">
+              <div class="servicesCarousel servicesGallary">
+
+                <div class="col-md-6 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService singleService2 clearfix">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div><!-- end of services icon -->
+                    <div class="servicesContents">
+                      <h3 class="serviceName">System Admin</h3>
+                      <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.</p>
+                      <a class="readMore generalLink" href="#">Read More</a>
+                    </div><!-- end of services contents -->
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-6 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService singleService2 clearfix">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div><!-- end of services icon -->
+                    <div class="servicesContents">
+                      <h3 class="serviceName">Backups &amp; Storage</h3>
+                      <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.</p>
+                      <a class="readMore generalLink" href="#">Read More</a>
+                    </div><!-- end of services contents -->
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-6 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService singleService2 clearfix">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div><!-- end of services icon -->
+                    <div class="servicesContents">
+                      <h3 class="serviceName">24 / 7 Live Support</h3>
+                      <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.</p>
+                      <a class="readMore generalLink" href="#">Read More</a>
+                    </div><!-- end of services contents -->
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-6 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService singleService2 clearfix">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-4"></div>
+                    </div><!-- end of services icon -->
+                    <div class="servicesContents">
+                      <h3 class="serviceName">Worldwide locations</h3>
+                      <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.</p>
+                      <a class="readMore generalLink" href="#">Read More</a>
+                    </div><!-- end of services contents -->
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+              </div><!-- end of services gallary -->
+
+            </div><!-- end of row -->
+          </div><!-- end of container -->
+        </div><!-- end of section wrapper -->
+      </section><!-- end welcome section -->
+
+
+      <!-- Welcome -->
+      <section class="welcome section mainSection scrollAnchor graySection style-5" id="welcome4">
+        <div class="sectionWrapper">
+          <div class="container">
+
+            <div class="row">
+
+              <div class="col-md-12 sectionTitle">
+                <h2 class="sectionHeader">
+                  Welcome To Seven Host , Awesome Hosting Template
+                  <span class="generalBorder"></span>
+                </h2><!-- end of sectionHeader -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.</p>
+              </div><!-- end of section title -->
+
+            </div><!-- end of row -->
+
+            <div class="row">
+              <div class="servicesCarousel carousel owl-carousel servicesGallary">
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">System Admin</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">Backups &amp; Storage</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">24 / 7 Live Support</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">Worldwide locations</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-4"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">System Admin</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">Backups &amp; Storage</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">24 / 7 Live Support</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">Worldwide locations</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-4"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">System Admin</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">Backups &amp; Storage</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">24 / 7 Live Support</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <h3 class="serviceName">Worldwide locations</h3>
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-4"></div>
+                    </div>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div>
+                  <!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+              </div><!-- end of services gallary -->
+
+            </div><!-- end of row -->
+          </div><!-- end of container -->
+        </div><!-- end of section wrapper -->
+      </section><!-- end welcome section -->
+
+
+      <!-- Welcome -->
+      <section class="welcome section mainSection scrollAnchor lightSection" id="welcome5">
+        <div class="sectionWrapper">
+          <div class="container">
+
+            <div class="row">
+
+              <div class="col-md-12 sectionTitle">
+                <h2 class="sectionHeader">
+                  Welcome To Seven Host , Awesome Hosting Template
+                  <span class="generalBorder"></span>
+                </h2><!-- end of sectionHeader -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.</p>
+              </div><!-- end of section title -->
+
+            </div><!-- end of row -->
+
+            <div class="row">
+              <div class="servicesCarousel carousel owl-carousel servicesGallary">
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div>
+                    <h3 class="serviceName">System Admin</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div>
+                    <h3 class="serviceName">Backups &amp; Storage</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div>
+                    <h3 class="serviceName">24 / 7 Live Support</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-4"></div>
+                    </div>
+                    <h3 class="serviceName">Worldwide locations</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div>
+                    <h3 class="serviceName">System Admin</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div>
+                    <h3 class="serviceName">Backups &amp; Storage</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div>
+                    <h3 class="serviceName">24 / 7 Live Support</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-4"></div>
+                    </div>
+                    <h3 class="serviceName">Worldwide locations</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div>
+                    <h3 class="serviceName">System Admin</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div>
+                    <h3 class="serviceName">Backups &amp; Storage</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div>
+                    <h3 class="serviceName">24 / 7 Live Support</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-4"></div>
+                    </div>
+                    <h3 class="serviceName">Worldwide locations</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div>
+                  <!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+              </div><!-- end of services gallary -->
+
+            </div><!-- end of row -->
+          </div><!-- end of container -->
+        </div><!-- end of section wrapper -->
+      </section><!-- end welcome section -->
+
+
+      <!-- Welcome -->
+      <section class="welcome section mainSection scrollAnchor lightSection style-7" id="welcome6">
+        <div class="sectionWrapper">
+          <div class="container">
+
+            <div class="row">
+
+              <div class="col-md-12 sectionTitle">
+                <h2 class="sectionHeader">
+                  Welcome To Seven Host , Awesome Hosting Template
+                  <span class="generalBorder"></span>
+                </h2><!-- end of sectionHeader -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.</p>
+              </div><!-- end of section title -->
+
+            </div><!-- end of row -->
+
+            <div class="row">
+              <div class="servicesCarousel carousel owl-carousel servicesGallary">
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div>
+                    <h3 class="serviceName">System Admin</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div>
+                    <h3 class="serviceName">Backups &amp; Storage</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div>
+                    <h3 class="serviceName">24 / 7 Live Support</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-4"></div>
+                    </div>
+                    <h3 class="serviceName">Worldwide locations</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div>
+                    <h3 class="serviceName">System Admin</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div>
+                    <h3 class="serviceName">Backups &amp; Storage</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div>
+                    <h3 class="serviceName">24 / 7 Live Support</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-4"></div>
+                    </div>
+                    <h3 class="serviceName">Worldwide locations</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-1"></div>
+                    </div>
+                    <h3 class="serviceName">System Admin</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-2"></div>
+                    </div>
+                    <h3 class="serviceName">Backups &amp; Storage</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-3"></div>
+                    </div>
+                    <h3 class="serviceName">24 / 7 Live Support</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div><!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+
+                <div class="col-md-3 col-sm-6 item service singleServiceWrapper">
+                  <div class="singleService">
+                    <div class="serviceIcon">
+                      <div class="servicesIconBase servicesBg-4"></div>
+                    </div>
+                    <h3 class="serviceName">Worldwide locations</h3>
+                    <p class="servicesDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam.</p>
+                    <a class="readMore generalLink" href="#">Read More</a>
+                  </div>
+                  <!-- end of single service -->
+                </div><!-- end of single service wrapper -->
+              </div><!-- end of services gallary -->
+
+            </div><!-- end of row -->
+          </div><!-- end of container -->
+        </div><!-- end of section wrapper -->
+      </section><!-- end welcome section -->
+
+      <!-- Purchase -->
+      <section class="purchase purchase2 section mainSection scrollAnchor accentSection style-5" id="purchase">
+        <div class="sectionWrapper">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-md-9 sectionTitle">
+                <h2 class="sectionHeader">
+                  Why You Are Late! Purchase Seven Host Template Now
+                </h2><!-- end of sectionHeader -->
+              </div><!-- end of section title -->
+
+              <div class="col-md-3">
+                <p class="links animated">
+                  <a class="generalLink lg" href="#">Purchase Now</a>
+                </p><!-- end of links -->
+              </div><!-- end of col-md-4 -->
+
+            </div><!-- end of row -->
+
+          </div><!-- end of container -->
+        </div><!-- end of section wrapper -->
+      </section><!-- end purchase section -->
 
 {% endblock %}

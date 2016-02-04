@@ -1,0 +1,310 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <!-- Page Header -->
+    <section class="pageHeader section mainSection scrollAnchor darkSection" id="pageHeader">
+        {% include "shared/header.html" %}
+    </section><!-- end of Page Header -->
+{% endblock %}
+
+{% block content %}
+   <!-- Page Info -->
+        <div class="pageInfo">
+          <div class="cover"></div>
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-4">
+                <h2 class="pageTitle">Portfolio</h2>
+              </div><!-- end of col-md-4 -->
+
+              <div class="col-md-8">
+                <ol class="breadcrumb">
+                  <li><a href="#">Home</a></li>
+                  <li class="active">Portfolio</li>
+                </ol><!-- end of breadcrumb -->
+              </div><!-- end of col-md-8 -->
+
+            </div><!-- end of row -->
+          </div><!-- end of container -->
+        </div><!-- end of page info -->
+
+      <!-- Portfolio -->
+      <section class="portfolio section mainSection scrollAnchor lightSection" id="portfolio">
+        <div class="sectionWrapper">
+          <div class="container portfolio2Column">
+
+            <div class="row">
+
+              <div class="col-md-12 sectionTitle">
+                <h2 class="sectionHeader">
+                  Look At Our Portfolio
+                  <span class="generalBorder"></span>
+                </h2><!-- end of sectionHeader -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.</p>
+              </div><!-- end of section title -->
+
+            </div><!-- end of row -->
+
+
+
+            <ul class='portfolioFilters filterOptions row'>
+              <li class='filter col-md-2' data-filter='all'><span>All</span></li>
+              <li class='filter col-md-2' data-filter='webHosting'><span>Web Hosting</span></li>
+              <li class='filter col-md-2' data-filter='cloudHosting'><span>Cloud</span></li>
+              <li class='filter col-md-2' data-filter='vpsServices'><span>Our Services</span></li>
+            </ul>
+
+            <div class="row grid" id="grid">
+
+
+              <article class="col-md-6 project mix cloudHosting webHosting">
+                <div class="projectWrapper">
+                  <figure class="projectMedia">
+
+                    <a href="single-portfolio.html" title="project sample">
+                      <img alt="project sample" src="http://placehold.it/570x348/" title="project sample">
+                    </a>
+
+                    <figcaption class="caption">
+                      <ul class="projectMeta">
+                        <li><a href="single-portfolio.html" class="generalLink"><i class="animated fa fa-link"></i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target=".lightBoxBlog" class="generalLink"><i class="animated fa fa-search"></i></a></li>
+                      </ul>
+                    </figcaption><!-- end of caption -->
+
+                  </figure><!-- end of project media -->
+                  <div class="projectContents">
+                    <h5 class="projectName"><a href="single-portfolio.html">Project Name</a></h5><!-- end of project name -->
+
+                    <ul class="projectCategory">
+                      <li><a href="#">Web Hosting</a></li>
+                      <li><a href="#">Cloud Hosting</a></li>
+                    </ul><!-- end of project category -->
+
+                  </div><!-- end of project contents -->
+                </div>
+              </article><!-- end of project -->
+
+
+              <article class="col-md-6 project mix webHosting">
+                <div class="projectWrapper">
+                  <figure class="projectMedia">
+
+                    <a href="single-portfolio.html" title="project sample">
+                      <img alt="project sample" src="http://placehold.it/570x348/" title="project sample">
+                    </a>
+
+                    <figcaption class="caption">
+                      <ul class="projectMeta">
+                        <li><a href="single-portfolio.html" class="generalLink"><i class="animated fa fa-link"></i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target=".lightBoxBlog" class="generalLink"><i class="animated fa fa-search"></i></a></li>
+                      </ul>
+                    </figcaption><!-- end of caption -->
+
+                  </figure><!-- end of project media -->
+                  <div class="projectContents">
+                    <h5 class="projectName"><a href="single-portfolio.html">Project Name</a></h5><!-- end of project name -->
+
+                    <ul class="projectCategory">
+                      <li><a href="#">Web Hosting</a></li>
+                    </ul><!-- end of project category -->
+
+                  </div><!-- end of project contents -->
+                </div>
+              </article><!-- end of project -->
+
+
+
+              <article class="col-md-6 project mix vpsServices">
+                <div class="projectWrapper">
+                  <figure class="projectMedia">
+
+                    <a href="single-portfolio.html" title="project sample">
+                      <img alt="project sample" src="http://placehold.it/570x348/" title="project sample">
+                    </a>
+
+                    <figcaption class="caption">
+                      <ul class="projectMeta">
+                        <li><a href="single-portfolio.html" class="generalLink"><i class="animated fa fa-link"></i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target=".lightBoxBlog" class="generalLink"><i class="animated fa fa-search"></i></a></li>
+                      </ul>
+                    </figcaption><!-- end of caption -->
+
+                  </figure><!-- end of project media -->
+                  <div class="projectContents">
+                    <h5 class="projectName"><a href="single-portfolio.html">Project Name</a></h5><!-- end of project name -->
+
+                    <ul class="projectCategory">
+                      <li><a href="#">VPS Services</a></li>
+                    </ul><!-- end of project category -->
+
+                  </div><!-- end of project contents -->
+                </div>
+              </article><!-- end of project -->
+
+
+
+              <article class="col-md-6 project mix vpsServices">
+                <div class="projectWrapper">
+                  <figure class="projectMedia">
+
+                    <a href="single-portfolio.html" title="project sample">
+                      <img alt="project sample" src="http://placehold.it/570x348/" title="project sample">
+                    </a>
+
+                    <figcaption class="caption">
+                      <ul class="projectMeta">
+                        <li><a href="single-portfolio.html" class="generalLink"><i class="animated fa fa-link"></i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target=".lightBoxBlog" class="generalLink"><i class="animated fa fa-search"></i></a></li>
+                      </ul>
+                    </figcaption><!-- end of caption -->
+
+                  </figure><!-- end of project media -->
+                  <div class="projectContents">
+                    <h5 class="projectName"><a href="single-portfolio.html">Project Name</a></h5><!-- end of project name -->
+
+                    <ul class="projectCategory">
+                      <li><a href="#">VPS Services</a></li>
+                    </ul><!-- end of project category -->
+
+                  </div><!-- end of project contents -->
+                </div>
+              </article><!-- end of project -->
+
+
+
+              <article class="col-md-6 project mix cloudHosting">
+                <div class="projectWrapper">
+                  <figure class="projectMedia">
+
+                    <a href="single-portfolio.html" title="project sample">
+                      <img alt="project sample" src="http://placehold.it/570x348/" title="project sample">
+                    </a>
+
+                    <figcaption class="caption">
+                      <ul class="projectMeta">
+                        <li><a href="single-portfolio.html" class="generalLink"><i class="animated fa fa-link"></i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target=".lightBoxBlog" class="generalLink"><i class="animated fa fa-search"></i></a></li>
+                      </ul>
+                    </figcaption><!-- end of caption -->
+
+                  </figure><!-- end of project media -->
+                  <div class="projectContents">
+                    <h5 class="projectName"><a href="single-portfolio.html">Project Name</a></h5><!-- end of project name -->
+
+                    <ul class="projectCategory">
+                      <li><a href="#">Cloud Hosting</a></li>
+                    </ul><!-- end of project category -->
+
+                  </div><!-- end of project contents -->
+                </div>
+              </article><!-- end of project -->
+
+
+
+              <article class="col-md-6 project mix dedicatedServers cloudHosting">
+                <div class="projectWrapper">
+                  <figure class="projectMedia">
+
+                    <a href="single-portfolio.html" title="project sample">
+                      <img alt="project sample" src="http://placehold.it/570x348/" title="project sample">
+                    </a>
+
+                    <figcaption class="caption">
+                      <ul class="projectMeta">
+                        <li><a href="single-portfolio.html" class="generalLink"><i class="animated fa fa-link"></i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target=".lightBoxBlog" class="generalLink"><i class="animated fa fa-search"></i></a></li>
+                      </ul>
+                    </figcaption><!-- end of caption -->
+
+                  </figure><!-- end of project media -->
+                  <div class="projectContents">
+                    <h5 class="projectName"><a href="single-portfolio.html">Project Name</a></h5><!-- end of project name -->
+
+                    <ul class="projectCategory">
+                      <li><a href="#">Cloud Hosting</a></li>
+                      <li><a href="#">Dedicated Servers</a></li>
+                    </ul><!-- end of project category -->
+
+                  </div><!-- end of project contents -->
+                </div>
+              </article><!-- end of project -->
+
+
+
+              <article class="col-md-6 project mix cloudHosting">
+                <div class="projectWrapper">
+                  <figure class="projectMedia">
+
+                    <a href="single-portfolio.html" title="project sample">
+                      <img alt="project sample" src="http://placehold.it/570x348/" title="project sample">
+                    </a>
+
+                    <figcaption class="caption">
+                      <ul class="projectMeta">
+                        <li><a href="single-portfolio.html" class="generalLink"><i class="animated fa fa-link"></i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target=".lightBoxBlog" class="generalLink"><i class="animated fa fa-search"></i></a></li>
+                      </ul>
+                    </figcaption><!-- end of caption -->
+
+                  </figure><!-- end of project media -->
+                  <div class="projectContents">
+                    <h5 class="projectName"><a href="single-portfolio.html">Project Name</a></h5><!-- end of project name -->
+
+                    <ul class="projectCategory">
+                      <li><a href="#">Cloud Hosting</a></li>
+                    </ul><!-- end of project category -->
+
+                  </div><!-- end of project contents -->
+                </div>
+              </article><!-- end of project -->
+
+
+
+              <article class="col-md-6 project mix webHosting">
+                <div class="projectWrapper">
+                  <figure class="projectMedia">
+
+                    <a href="single-portfolio.html" title="project sample">
+                      <img alt="project sample" src="http://placehold.it/570x348/" title="project sample">
+                    </a>
+
+                    <figcaption class="caption">
+                      <ul class="projectMeta">
+                        <li><a href="single-portfolio.html" class="generalLink"><i class="animated fa fa-link"></i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target=".lightBoxBlog" class="generalLink"><i class="animated fa fa-search"></i></a></li>
+                      </ul>
+                    </figcaption><!-- end of caption -->
+
+                  </figure><!-- end of project media -->
+                  <div class="projectContents">
+                    <h5 class="projectName"><a href="single-portfolio.html">Project Name</a></h5><!-- end of project name -->
+
+                    <ul class="projectCategory">
+                      <li><a href="#">Web Hosting</a></li>
+                    </ul><!-- end of project category -->
+
+                  </div><!-- end of project contents -->
+                </div>
+              </article><!-- end of project -->
+
+              <div class="col-md-6 gap"></div><!-- end of gap --><!-- "gap" elements fill in the gaps in justified grid -->
+
+
+            </div><!-- end of row -->
+
+            <ul class="pagination">
+              <li><a href="#"><i class="animated fa fa-angle-left"></i></a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#"><i class="animated fa fa-angle-right"></i></a></li>
+            </ul>
+
+            <div class="clearfix"></div>
+
+          </div><!-- end of container -->
+        </div><!-- end of section wrapper -->
+      </section><!-- end portfolio section -->
+{% endblock %}

@@ -1,148 +1,247 @@
 {% extends "base.html" %}
 
+{% block header %}
+
+    <!-- Page Header -->
+    <section class="pageHeader section mainSection scrollAnchor darkSection" id="pageHeader">
+        {% include "shared/header.html" %}
+    </section><!-- end of Page Header -->
+{% endblock %}
+
+
 {% block content %}
 
-    <div>
-        <div class="top-line">
+    <!-- Page Info -->
+    <div class="pageInfo">
+        <div class="cover"></div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <h2 class="pageTitle">About Us</h2>
+                </div><!-- end of col-md-4 -->
+
+                <div class="col-md-8">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">About Us</li>
+                    </ol><!-- end of breadcrumb -->
+                </div><!-- end of col-md-8 -->
+
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </div><!-- end of page info -->
+    <!-- Introduction -->
+    <section class="introduction section mainSection scrollAnchor lightSection" id="introduction">
+        <div class="sectionWrapper">
             <div class="container">
+
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>
-                            <span><i class="fa fa-phone"></i>1234 - 5678 - 9012</span>
-                            <span><i class="fa fa-envelope-o"></i>support@flatbuild.com</span>
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="social-icons">
-                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
-                            <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+
+                    <div class="col-md-12 sectionTitle">
+                        <h2 class="sectionHeader">
+                            Introduction, All You Want To Know About 7Host
+                            <span class="generalBorder"></span>
+                        </h2><!-- end of sectionHeader -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.</p>
+                    </div><!-- end of section title -->
+
+                </div><!-- end of row -->
+
+                <div class="row wideBlog">
+
+                    <div class="col-md-12 post postWide singlePost singlePoject">
+
+                        <div class="row">
+                            <div class="col-md-12 postMedia postSlider carousel2">
+                                <a href="single-blog-1.html" title="post sample">
+                                    <img alt="post sample" src="{{ MEDIA_URL }}about/slide-1.jpg" title="post sample">
+                                </a>
+                                <a href="single-blog-1.html" title="post sample">
+                                    <img alt="post sample" src="{{ MEDIA_URL }}about/slide-2.jpg" title="post sample">
+                                </a>
+                                <a href="single-blog-1.html" title="post sample">
+                                    <img alt="post sample" src="{{ MEDIA_URL }}about/slide-3.jpg" title="post sample">
+                                </a>
+                            </div>
+                            <div class="col-md-12 postContents">
+                                <p class="postDetails">Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. </p>
+
+                            </div>
+                        </div><!-- end of row -->
+                    </div><!-- end of post -->
+
+                </div><!-- end of row -->
+
+            </div><!-- end of container -->
+        </div><!-- end of section wrapper -->
+    </section><!-- end introduction section -->
+
+    <!-- Team -->
+    <section class="team section mainSection scrollAnchor darkSection" id="team">
+        <div class="sectionWrapper">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12 sectionTitle">
+                        <h2 class="sectionHeader">
+                            Meet Our AWESOME TEAM
+                            <span class="generalBorder"></span>
+                        </h2><!-- end of sectionHeader -->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.</p>
+                    </div><!-- end of section title -->
+
+                </div><!-- end of row -->
+
+                <div class="row teamContents">
+
+                    <div class="col-md-3 teamMember">
+
+                        <div class="teamMemberWrapper">
+                            <div class="memberAvatar"><img src="{{ STATIC_PREFIX }}images/member-1.jpg" alt="team member" title="team member"></div>
+                            <h4 class="memberName"><a href="#">Mahmoud Baghagho</a></h4>
+                            <span class="memberJob">Senior UI Designer</span>
+                            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <ul class="memberSocial socialNav clearfix">
+                                <li class="facebook"><a href="#"><i class="animated fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="animated fa fa-twitter"></i></a></li>
+                                <li class="rss"><a href="#"><i class="animated fa fa-rss"></i></a></li>
+                            </ul>
+                        </div><!-- end of tream member wrapper -->
+
+                    </div><!-- end of team Member -->
+
+                    <div class="col-md-3 teamMember">
+
+                        <div class="teamMemberWrapper">
+                            <div class="memberAvatar"><img src="{{ STATIC_PREFIX }}images/member-1.jpg" alt="team member" title="team member"></div>
+                            <h4 class="memberName"><a href="#">Mahmoud Bayomy</a></h4>
+                            <span class="memberJob">Web Developer</span>
+                            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <ul class="memberSocial socialNav clearfix">
+                                <li class="facebook"><a href="#"><i class="animated fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="animated fa fa-twitter"></i></a></li>
+                                <li class="rss"><a href="#"><i class="animated fa fa-rss"></i></a></li>
+                            </ul>
+                        </div><!-- end of tream member wrapper -->
+
+                    </div><!-- end of team Member -->
+
+                    <div class="col-md-3 teamMember">
+
+                        <div class="teamMemberWrapper">
+                            <div class="memberAvatar"><img src="{{ STATIC_PREFIX }}images/member-1.jpg" alt="team member" title="team member"></div>
+                            <h4 class="memberName"><a href="#">Mahmoud Baghagho</a></h4>
+                            <span class="memberJob">Senior UI Designer</span>
+                            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <ul class="memberSocial socialNav clearfix">
+                                <li class="facebook"><a href="#"><i class="animated fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="animated fa fa-twitter"></i></a></li>
+                                <li class="rss"><a href="#"><i class="animated fa fa-rss"></i></a></li>
+                            </ul>
+                        </div><!-- end of tream member wrapper -->
+
+                    </div><!-- end of team Member -->
+
+                    <div class="col-md-3 teamMember">
+
+                        <div class="teamMemberWrapper">
+                            <div class="memberAvatar"><img src="{{ STATIC_PREFIX }}images/member-1.jpg" alt="team member" title="team member"></div>
+                            <h4 class="memberName"><a href="#">Mahmoud Bayomy</a></h4>
+                            <span class="memberJob">Web Developer</span>
+                            <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <ul class="memberSocial socialNav clearfix">
+                                <li class="facebook"><a href="#"><i class="animated fa fa-facebook"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="animated fa fa-twitter"></i></a></li>
+                                <li class="rss"><a href="#"><i class="animated fa fa-rss"></i></a></li>
+                            </ul>
+                        </div><!-- end of tream member wrapper -->
+
+                    </div><!-- end of team Member -->
+
+                </div><!-- end of row -->
+
+            </div><!-- end of container -->
+        </div><!-- end of section wrapper -->
+    </section><!-- end of team section -->
+
+
+    <!-- Clients -->
+    <section class="clients section mainSection scrollAnchor lightSection" id="clients">
+        <div class="sectionWrapper">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-12 sectionTitle">
+                        <h2 class="sectionHeader">
+                            Why You Are Hesitated, Join Our Happy Customers Now !
+                        </h2><!-- end of sectionHeader -->
+                    </div><!-- end of section title -->
+
+                </div><!-- end of row -->
+
+                <div class="row">
+
+                    <div class="clientsCarousel owl-carousel clientsGallary">
+
+                        <div class="col-md-2 col-sm-4 item client singleClientsWrapper">
+                            <a class="singleClient" href="#" title="client">
+                                <img alt="client 1" src="{{ STATIC_PREFIX }}images/clients/1.png" title="client">
+                            </a><!-- end of single client -->
+                        </div><!-- end of single client wrapper -->
+
+                        <div class="col-md-2 col-sm-4 item client singleClientsWrapper">
+                            <a class="singleClient" href="#" title="client">
+                                <img alt="client 2" src="{{ STATIC_PREFIX }}images/clients/2.png" title="client">
+                            </a><!-- end of single client -->
+                        </div><!-- end of single client wrapper -->
+
+                        <div class="col-md-2 col-sm-4 item client singleClientsWrapper">
+                            <a class="singleClient" href="#" title="client">
+                                <img alt="client 3" src="{{ STATIC_PREFIX }}images/clients/3.png" title="client">
+                            </a><!-- end of single client -->
+                        </div><!-- end of single client wrapper -->
+
+                        <div class="col-md-2 col-sm-4 item client singleClientsWrapper">
+                            <a class="singleClient" href="#" title="client">
+                                <img alt="client 4" src="{{ STATIC_PREFIX }}images/clients/4.png" title="client">
+                            </a><!-- end of single client -->
+                        </div><!-- end of single client wrapper -->
+
+                        <div class="col-md-2 col-sm-4 item client singleClientsWrapper">
+                            <a class="singleClient" href="#" title="client">
+                                <img alt="client 5" src="{{ STATIC_PREFIX }}images/clients/5.png" title="client">
+                            </a><!-- end of single client -->
+                        </div><!-- end of single client wrapper -->
+
+                        <div class="col-md-2 col-sm-4 item client singleClientsWrapper">
+                            <a class="singleClient" href="#" title="client">
+                                <img alt="client 6" src="{{ STATIC_PREFIX }}images/clients/6.png" title="client">
+                            </a><!-- end of single client -->
+                        </div><!-- end of single client wrapper -->
+
+                        <div class="col-md-2 col-sm-4 item client singleClientsWrapper">
+                            <a class="singleClient" href="#" title="client">
+                                <img alt="client 7" src="{{ STATIC_PREFIX }}images/clients/7.png" title="client">
+                            </a><!-- end of single client -->
+                        </div><!-- end of single client wrapper -->
+
+                        <div class="col-md-2 col-sm-4 item client singleClientsWrapper">
+                            <a class="singleClient" href="#" title="client">
+                                <img alt="client 8" src="{{ STATIC_PREFIX }}images/clients/8.png" title="client">
+                            </a><!-- end of single client -->
+                        </div><!-- end of single client wrapper -->
+
+                        <!-- end of single client wrapper -->
+
+                    </div><!-- end of clients gallary -->
+
+                </div><!-- end of row -->
+
             </div>
         </div>
-
-        <!-- page-banner-section
-            ================================================== -->
-        <section class="page-banner-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>About Us</h2>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="page-depth">
-                            <li><a href="/">flatbuild</a></li>
-                            <li><a href="{% url 'about' %}">About us</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End page-banner section -->
-
-        <!-- about section
-            ================================================== -->
-        <section class="about-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="{{ STATIC_PREFIX }}upload/others/4.jpg" alt="">
-                        <h2>Who we are</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="{{ STATIC_PREFIX }}upload/others/8.jpg" alt="">
-                        <h2>What we do</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Ut enim ad minim veniam,	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End about section -->
-
-        <!-- team section
-            ================================================== -->
-        <section class="team-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="team-post">
-                            <img src="{{ STATIC_PREFIX }}upload/team/1.jpg" alt="">
-                            <h2>John Smith</h2>
-                            <span>Company Menager</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="team-post">
-                            <img src="{{ STATIC_PREFIX }}upload/team/4.jpg" alt="">
-                            <h2>Besim Dauti</h2>
-                            <span>Architect</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="team-post">
-                            <img src="{{ STATIC_PREFIX }}upload/team/3.jpg" alt="">
-                            <h2>Alex Doe</h2>
-                            <span>Project Menager</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="team-post">
-                            <img src="{{ STATIC_PREFIX }}upload/team/5.jpg" alt="">
-                            <h2>John Doe</h2>
-                            <span>Isolator Man</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="team-post">
-                            <img src="{{ STATIC_PREFIX }}upload/team/2.jpg" alt="">
-                            <h2>Kenan Januzi</h2>
-                            <span>Head Worker</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="team-post">
-                            <img src="{{ STATIC_PREFIX }}upload/team/6.jpg" alt="">
-                            <h2>Hunejs Dauti</h2>
-                            <span>Building Worker</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End team section -->
-
-    </div>
+    </section><!-- end clients section -->
 {% endblock %}
 
 {% block extra_js %}
