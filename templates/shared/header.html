@@ -45,22 +45,22 @@
                 <nav class="mainMenu mainNav" id="mainNav">
                     <ul class="navTabs">
                         <li>
-                            <a href="/" class="active">Home</a>
+                            <a href="/" id="home" class="active">Home</a>
                         </li>
                         <li>
-                            <a href="{% url 'about' %}">About Us</a>
+                            <a href="{% url 'about' %}" id="about">About Us</a>
                         </li>
                         <li>
-                            <a href="{% url 'portfolio' %}">Portfolio</a>
+                            <a href="{% url 'portfolio' %}" id="portfolio">Portfolio</a>
                         </li>
                         <li>
-                            <a href="{% url 'hosting' %}">Web Hosting</a>
+                            <a href="{% url 'hosting' %}" id="hosting">Web Hosting</a>
                         </li>
                         <li>
-                            <a href="{% url 'cloud' %}">Cloud</a>
+                            <a href="{% url 'cloud' %}" id="cloud">Cloud</a>
                         </li>
                         <li>
-                            <a href="{% url 'services' %}">Services</a>
+                            <a href="{% url 'services' %}" id="services">Services</a>
                             <ul class="dropDown sub-menu">
                                 <li>
                                     <a href="{% url 'services' %}">Web Developing</a>
@@ -71,7 +71,7 @@
                             </ul><!-- end of dropdown -->
                         </li>
                         <li>
-                            <a href="{% url 'contact' %}">Contact Us</a>
+                            <a href="{% url 'contact' %}" id="contact">Contact Us</a>
                         </li>
 
                         <li class="login formTop">
