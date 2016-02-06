@@ -2120,17 +2120,12 @@ hr,
 }
 .topContact ul li {
   float: left;
-  color: #c5c5c5;
-  font-size: 13px;
-  padding: 0px 14px;
-  height: 14px;
-  line-height: 14px;
 }
 .topContact ul li:first-child {
-  padding: 0px 14px 0px 0px;
+  padding: 0;
 }
 .topContact ul li:last-child {
-  padding: 0px 0px 0px 14px;
+  padding: 0;
   border-right: none;
 }
 .topContact ul li a {
@@ -8102,15 +8097,24 @@ img.fnone {
 }
 
 .topMenu .top-search{
- padding: 5px 10px;
-    font-size: 13px;
+    width: 300px;
+    border: none;
+    height: 28px;
+    background-color: rgba(28, 30, 41, 0);
+    font-size: 10pt;
+    color: #fff;
+    padding-left: 15px;
+    border-bottom: 1px solid #38CBCB;
+    display: none;
 }
 .topMenu .topContact  button {
         display: block;
     background-color: #38cbcb;
     width: 100%;
-    height: 26px;
+    height: 28px;
     line-height: 26px;
     padding-top: 0;
     padding-bottom: 0;
+        border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }

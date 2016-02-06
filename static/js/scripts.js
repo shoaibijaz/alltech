@@ -77,6 +77,7 @@ This file includes all cusomized javascript and all plugins libraries options
   //-- Tooltip --
   jQuery(document).ready(function(){
     jQuery('.tooltip-h').tooltip();
+
   });
   //--------------------------------------------------------------------------------------------
 
@@ -884,6 +885,14 @@ This file includes all cusomized javascript and all plugins libraries options
 
   });
 
-  
+
+    /* Top Searhc */
+
+    jQuery(document).ready(function(){
+        jQuery("#btnTopSearch").click(function(){
+            jQuery("#topSearch").show("slide", { direction: "right" }, 1500);
+        });
+    });
+
 })();//end of use strict
     
